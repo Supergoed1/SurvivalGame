@@ -1,7 +1,8 @@
 var power = 1;
 var zombiekills = 0;
 
-function addNotification() {
+function addNotification(message) {
     var noti = document.getElementById("notifications");
-    noti.innerHTML += 'ya yeet';
+    var content = document.createTextNode(message);
+    theDiv.appendChild(content);
 }
