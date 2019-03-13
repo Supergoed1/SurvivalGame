@@ -5,7 +5,7 @@ var notis = 0;
 function addNotification(message) {
     var noti = document.getElementById("notifications");
     if(notis >= 8) {
-        for (let index = 0; index < array.length; index++) {
+        for (let index = 0; index < noti.children.length; index++) {
             const element = noti.children[index + 1];
             element.innerHTML = noti.children[index]
             
