@@ -5,7 +5,12 @@ var notis = 0;
 function addNotification(message) {
     var noti = document.getElementById("notifications");
     if(notis >= 8) {
-        noti.children[7].remove();
+        for (let index = 0; index < array.length; index++) {
+            const element = noti.children[index + 1];
+            element.innerHTML = noti.children[index]
+            
+        }
+        noti.children[0].innerHTML = message;
         notis -= 1;
     }
     var content = document.createElement('div');
