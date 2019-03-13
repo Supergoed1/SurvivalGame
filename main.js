@@ -10,6 +10,5 @@ function addNotification(message) {
     }
     var content = document.createElement('div');
     content.innerHTML = message;
-    noti.appendChild(content);
     notis += 1;
 }
